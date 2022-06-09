@@ -1,0 +1,11 @@
+1--> cd to the Github-Crawler and do npm install there to install the dependencies
+2--> keep the csv file in the data folder
+3--> setup the github token as environment variable to use github functions
+
+4--> to run type the command in following format----------- node index.js -i file_name dependency@version -update (-update is  optional)
+Eg. node index.js -i github_repos.csv axios@^0.23.0 -update
+
+5--> That's it now just run the index.js file and it will scan the content of csv for dependencies version and will update if needed.
+
+Note- Each time you use the app make sure you update the branch mentioned in head in line 32 of post.js file as it needs a new branch to send a pull request and 
+if you use the same branch again it will give the error that refrence already exist cannot create new one.
